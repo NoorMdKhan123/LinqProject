@@ -68,12 +68,14 @@ namespace LinqProject
 
 
             };
-            foreach(var list in productReviewList)
-            {
-                Console.WriteLine("ProductID:-" + list.ProductId + " " + "UserID:" + list.UserID +
-                    " " + "Rating:-" + list.Rating + " " + "Review:-" + list.Reveiew + " "+
-                    "People liked:-" + list.isLike);
-            }
+            //foreach(var list in productReviewList)
+            //{
+            //    Console.WriteLine("ProductID:-" + list.ProductId + " " + "UserID:" + list.UserID +
+            //        " " + "Rating:-" + list.Rating + " " + "Review:-" + list.Reveiew + " "+
+            //        "People liked:-" + list.isLike);
+            //}
+            Management management = new Management();
+            management.TopRecords(productReviewList);
         }
     }
 }
